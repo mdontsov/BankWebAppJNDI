@@ -76,11 +76,11 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`username`, `password`, `enabled`) VALUES
-('Jake', 'e2a79383c1347633461eb9fb56cf4972a0155919', 1),
-('Maria', '3e182b1ea9376483a38614d916a0b666ef531b6d', 1),
-('Mike', 'd6ac022931a66a2bcc244db91818ebec76ce5e18', 1),
-('Sara', '5d569dfc13001c8b30aa11eeb2a59d22071f3d80', 1),
-('Tom', '26d58cf3df0903a2298788b72fced5bca9ea7144', 1);
+('Jake', 'Jake', 1),
+('Maria', 'Maria', 1),
+('Mike', 'Mike', 1),
+('Sara', 'Sara', 1),
+('Tom', 'Tom', 1);
 
 --
 -- Constraints for dumped tables
