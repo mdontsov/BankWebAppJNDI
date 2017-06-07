@@ -1,5 +1,6 @@
 Feature: Client performs various operations inside webapp
 
+  @start @end
   Scenario: Client can login to system using username and password
     Given webpage is opened
     Then client inputs Maria username
@@ -7,6 +8,7 @@ Feature: Client performs various operations inside webapp
     When client presses Login button
     Then client is logged in
 
+  @start @end
   Scenario: Client is forced to change the password at first login
     Given webpage is opened
     Then client inputs Tom username
@@ -15,6 +17,7 @@ Feature: Client performs various operations inside webapp
     But system displays message about password change
     And client changes password
 
+  @start @end
   Scenario: Client gains access to summary of account balances
     Given webpage is opened
     Then client inputs Jake username

@@ -1,5 +1,6 @@
 package example;
 
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.*;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -92,5 +93,10 @@ public class scenarioIgnite {
                 Assert.assertTrue(basePage.userPage.userPageHeader.isDisplayed());
             }
         }
+    }
+
+    @After("@end")
+    public void tearDown() {
+        basePage.getDriver().quit();
     }
 }
